@@ -1,0 +1,20 @@
+Definir Alfa c_Gen;
+
+aSQL = "SELECT ...";
+SQL_Criar(c_Gen);
+SQL_UsarSQLSenior2(c_Gen,0);
+SQL_UsarAbrangencia(c_Gen, 0);
+SQL_DefinirComando(c_Gen, aSQL);
+SQL_DefinirInteiro(c_Gen, "X", nX);
+SQL_DefinirAlfa(c_Gen, "Y", aY);
+SQL_DefinirInteiro(c_Gen, "Z", nZ);
+SQL_AbrirCursor(c_Gen);
+Enquanto (SQL_EOF(c_Gen) = 0) {
+  SQL_RetornarInteiro(c_Gen, "RX", nRX);
+  SQL_RetornarAlfa(c_Gen, "RY", aRY);
+  SQL_RetornarFlutuante(c_Gen, "RZ", nRZ);
+  
+  SQL_Proximo(c_Gen);
+}
+SQL_FecharCursor(c_Gen);
+SQL_Destruir(c_Gen);
