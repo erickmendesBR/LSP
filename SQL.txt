@@ -18,3 +18,9 @@ Enquanto (SQL_EOF(c_Gen) = 0) {
 }
 SQL_FecharCursor(c_Gen);
 SQL_Destruir(c_Gen);
+
+
+
+
+
+ExecSQL "SELECT ...";
