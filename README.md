@@ -1,1 +1,1 @@
-<h1>Code Snippets em LSP para desenvolvimento de regras no ERP Gestão Empresarial da Senior.</h1>
+<h1>Code Snippets em LSP.</h1>
